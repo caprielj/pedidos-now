@@ -1,0 +1,20 @@
+# Base para levantar un contenedor de mysql
+# Usar variables de entorno (.env)
+services:
+  mysql:
+    image: mysql:8.0.45-debian
+    container_name: mysql_pedidos_now
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD:
+      MYSQL_DATABASE: pedidos-now
+      MYSQL_USER: 
+      MYSQL_PASSWORD:
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
+    driver: local
