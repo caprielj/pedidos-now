@@ -1,0 +1,75 @@
+############################
+# Dependencias (todas las apps/servicios)
+############################
+**/node_modules/
+.pnp/
+.pnp.js
+
+############################
+# Builds / compilados (Nest, TS, frontends)
+############################
+**/dist/
+**/build/
+**/out/
+**/out-tsc/
+**/tmp/
+**/temp/
+**/.cache/
+**/.turbo/
+**/.nx/
+
+############################
+# Logs
+############################
+**/logs/
+**/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+############################
+# Coverage / tests
+############################
+**/coverage/
+**/.nyc_output/
+
+############################
+# TypeScript / linters caches
+############################
+**/*.tsbuildinfo
+**/.eslintcache
+**/.stylelintcache
+
+############################
+# Tailwind / tooling caches
+############################
+**/.tailwindcache
+
+############################
+# Entornos / secretos
+############################
+**/.env
+**/.env.*
+!**/.env.example
+
+############################
+# IDEs y editores
+############################
+**/.vscode/
+!**/.vscode/extensions.json
+!**/.vscode/settings.json
+!**/.vscode/tasks.json
+!**/.vscode/launch.json
+
+**/.idea/
+**/*.swp
+**/*.swo
+**/*~
+**/*.tmp
+
+############################
+# SO
+############################
+**/.DS_Store
+**/Thumbs.db
