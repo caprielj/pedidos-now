@@ -93,6 +93,7 @@ exports.cancelar = async (req, res, next) => {
       monto_multa  = parseFloat((parseFloat(pedido.total) * 0.05).toFixed(2));
     }
 
+    
     const cancelacion = await CancelacionPedido.create({
       pedido_id,
       cancelado_por,
