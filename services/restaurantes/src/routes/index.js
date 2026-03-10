@@ -9,6 +9,7 @@ const router = express.Router();
 
 // Importar rutas de módulos
 const restauranteRoutes = require('./restaurantes/restaurante.routes');
+const horarioRoutes = require('./restaurantes/horario.routes');
 const productoRoutes = require('./productos/producto.routes');
 
 // ============================================================
@@ -17,6 +18,9 @@ const productoRoutes = require('./productos/producto.routes');
 
 // Restaurantes
 router.use('/restaurantes', restauranteRoutes);
+
+// Horarios
+router.use('/horarios', horarioRoutes);
 
 // Productos
 router.use('/productos', productoRoutes);
