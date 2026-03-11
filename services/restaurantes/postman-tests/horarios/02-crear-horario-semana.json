@@ -1,0 +1,26 @@
+{
+  "endpoint": "POST http://localhost:3000/api/horarios",
+  "descripcion": "Crear múltiples horarios para un restaurante (ejecutar varias veces cambiando el día)",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "restaurante_id": 1,
+    "dia_semana": 0,
+    "hora_apertura": "09:00",
+    "hora_cierre": "21:00"
+  },
+  "nota": "Para crear el horario completo de la semana, ejecute este endpoint 7 veces cambiando dia_semana de 0 a 6",
+  "respuesta_esperada": {
+    "success": true,
+    "message": "Horario creado exitosamente",
+    "data": {
+      "id": 2,
+      "restaurante_id": 1,
+      "dia_semana": 0,
+      "hora_apertura": "09:00:00",
+      "hora_cierre": "21:00:00",
+      "activo": true
+    }
+  }
+}
